@@ -1,30 +1,68 @@
-# React + TypeScript + Vite
+# 🎯 Goals & Dreams — Приложение для управления целями и задачами
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Goals & Dreams** — мой личный pet-проект, представляющий собой веб-приложение для планирования, записи и отслеживания личных целей и повседневных задач.
 
-Currently, two official plugins are available:
+Приложение помогает пользователям структурировать свои планы, фиксировать идеи, ставить перед собой цели и следить за их выполнением. Основной акцент сделан на удобстве использования, простоте управления задачами и сохранении пользовательских данных.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Для управления состоянием приложения используется **Zustand**, а для хранения данных — **LocalStorage**, благодаря чему информация сохраняется в браузере даже после перезагрузки страницы.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## 📸 Скриншот проекта
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+![Goals & Dreams](./public/screen.png)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## ✨ Основные возможности
+
+- **Управление целями** — создание и запись личных целей.
+- **Управление задачами** — добавление, редактирование и удаление задач.
+- **Отслеживание прогресса** — контроль выполнения поставленных задач.
+- **Управление состоянием** — централизованное хранение данных с помощью Zustand.
+- **Локальное хранение данных** — сохранение информации в LocalStorage.
+- **Сохранение изменений** — данные остаются доступными после перезагрузки страницы.
+- **Удобный интерфейс** — простой и понятный пользовательский интерфейс для повседневного планирования.
+
+## 🛠️ Используемые технологии
+
+- **React 18** — разработка пользовательского интерфейса.
+- **JavaScript (ES6+)** — реализация логики приложения.
+- **Zustand** — управление глобальным состоянием приложения.
+- **LocalStorage** — локальное хранение пользовательских данных.
+- **React Router DOM** — маршрутизация между страницами.
+- **Chakra UI** — готовые компоненты пользовательского интерфейса.
+- **Emotion** — стилизация компонентов.
+- **Styled Components** — создание стилизованных компонентов.
+- **Framer Motion** — реализация анимаций и интерактивных переходов.
+- **Nanoid** — генерация уникальных идентификаторов.
+
+## ⚙️ Установка и запуск
+
+1. Клонировать репозиторий:
+
+   ```bash
+   git clone YOUR_REPOSITORY_LINK
+   ```
+
+2. Перейти в папку проекта:
+
+   ```bash
+   cd goals-and-dreams
+   ```
+
+3. Установить зависимости:
+
+   ```bash
+   npm install
+   ```
+
+4. Запустить проект:
+
+   ```bash
+   npm start
+   ```
+
+## 🎯 Цель проекта
+
+Проект разработан в рамках самостоятельной практики (Pet Project) для закрепления навыков разработки на React, изучения управления глобальным состоянием приложения с помощью Zustand и работы с браузерным хранилищем LocalStorage.
+
+В ходе разработки были получены практические навыки построения компонентной архитектуры, организации состояния приложения, сохранения пользовательских данных, создания интерактивных интерфейсов и реализации анимаций с помощью Framer Motion.
